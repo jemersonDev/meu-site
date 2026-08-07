@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { spaceGrotesk, jetbrainsMono } from "@/lib/fonts";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import CustomCursor from "@/components/ui/CustomCursor";
 import "@/styles/globals.css";
 
 const SITE = "https://jemerson.dev";
@@ -85,6 +86,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <CustomCursor />
       </body>
     </html>
   );

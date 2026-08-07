@@ -7,28 +7,46 @@ import type { JemStep } from "@/types/jemtech";
  */
 export const JEM_STEPS: readonly JemStep[] = [
   {
-    id: "presenca",
-    eyebrow: "Confirmação de presença",
-    title: ["Confirme quem vai", "em 1 toque."],
-    body: "Cada jogador confirma presença pelo celular. Você vê a lista fechar em tempo real, sem cobrar ninguém no grupo.",
+    id: "login",
+    eyebrow: "Acesso",
+    title: ["Entre com seu", "time, em segundos."],
+    body: "Login rápido, sem fricção. Convide o grupo e comece a organizar a pelada no mesmo dia.",
   },
   {
-    id: "times",
-    eyebrow: "Sorteio de times",
-    title: ["Times equilibrados,", "sem discussão."],
-    body: 'O app monta os times pelo nível de cada jogador. Acabou o "meu time sempre perde".',
+    id: "dashboard",
+    eyebrow: "Visão geral",
+    title: ["Tudo o que importa,", "numa tela só."],
+    body: "Próximo jogo, confirmados e financeiro resumidos. Você abre o app e já sabe o status.",
   },
   {
-    id: "financeiro",
-    eyebrow: "Financeiro da pelada",
-    title: ["Mensalidade e diária", "no controle."],
-    body: "Quem pagou, quem deve, quanto entrou. O caixa da pelada organizado sem planilha.",
+    id: "partidas",
+    eyebrow: "Partidas",
+    title: ["Confirme presença", "e sorteie os times."],
+    body: "Cada jogador confirma em 1 toque, e o app monta times equilibrados pelo nível de cada um.",
+  },
+  {
+    id: "estatisticas",
+    eyebrow: "Estatísticas",
+    title: ["Cada jogador,", "com seu histórico."],
+    body: "Gols, assistências, presença e evolução ao longo das temporadas — dados reais da sua pelada.",
   },
   {
     id: "ranking",
-    eyebrow: "Ranking & estatísticas",
+    eyebrow: "Ranking & artilharia",
     title: ["Artilheiro do mês", "tem nome."],
     body: "Gols, presenças e vitórias viram ranking. A galera volta toda semana pra subir na tabela.",
+  },
+  {
+    id: "chat",
+    eyebrow: "Chat do grupo",
+    title: ["A conversa da pelada,", "organizada."],
+    body: "Combinados, avisos e o papo do grupo num só lugar — sem se perder no WhatsApp.",
+  },
+  {
+    id: "ia",
+    eyebrow: "Assistente IA",
+    title: ["Dúvida sobre a pelada?", "Pergunte pra IA."],
+    body: "Um assistente que responde sobre regras, próximos jogos e estatísticas na hora, direto no app.",
   },
 ] as const;
 

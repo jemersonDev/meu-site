@@ -18,7 +18,9 @@ export default function JemTechSports() {
       {/* Accessible summary of the interactive scene for AT users. */}
       <p className="sr-only" id="jemtech-title">
         JemTech Sports — sistema completo para organizar partidas de futebol:
-        confirmação de presença, sorteio de times, financeiro e ranking.
+        login, dashboard, confirmação de presença e sorteio de times,
+        estatísticas, ranking, chat do grupo e assistente com inteligência
+        artificial.
       </p>
 
       {/* Act 1 — opening */}
@@ -60,7 +62,11 @@ export default function JemTechSports() {
 
       {/* Act 3 — pinned phone stage. Height drives the scroll length. */}
       <JemTechScene>
-        <div className="relative h-[520vh]" data-stage>
+        <div
+          className="relative"
+          style={{ height: `${JEM_STEPS.length * 130}vh` }}
+          data-stage
+        >
           {/* Ambient light layer, animated by the scene */}
           <div
             data-light
