@@ -3,12 +3,11 @@ import { spaceGrotesk, jetbrainsMono } from "@/lib/fonts";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
+import { SITE_URL } from "@/lib/site-url";
 import "@/styles/globals.css";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://jemerson.dev";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Jemerson Lima — Sistemas web, IA e automações",
     template: "%s · Jemerson Lima",
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: SITE,
+    url: SITE_URL,
     siteName: "Jemerson Lima",
     title: "Jemerson Lima — Sistemas web, IA e automações",
     description:
@@ -53,10 +52,13 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": ["Person", "ProfessionalService"],
   name: "Jemerson Lima",
-  jobTitle: "Desenvolvedor Full-Stack",
-  url: SITE,
+  jobTitle: "Desenvolvedor Full Stack",
+  description: "Criação de sites profissionais, sistemas web e automações com IA para empresas.",
+  areaServed: ["Uberaba", "Minas Gerais", "Brasil"],
+  knowsAbout: ["Next.js", "React", "TypeScript", "Sistemas web", "Automação", "Inteligência artificial"],
+  url: SITE_URL,
   address: { "@type": "PostalAddress", addressLocality: "Uberaba", addressRegion: "MG", addressCountry: "BR" },
   sameAs: [
     "https://github.com/jemersonDev",
