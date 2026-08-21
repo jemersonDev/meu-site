@@ -12,12 +12,9 @@ export interface ProcessStep {
 }
 
 export const SERVICES: readonly Service[] = [
-  { k: "01", title: "Sistemas Web", description: "Plataformas sob medida com backend robusto, auth e pagamentos PIX integrados.", tag: "full-stack" },
-  { k: "02", title: "Inteligência Artificial", description: "Agentes, RAG e automação com IA acoplados ao seu produto e dados.", tag: "AI" },
-  { k: "03", title: "Atendimento 24h", description: "Bots que respondem, qualificam e vendem enquanto você dorme.", tag: "always-on" },
-  { k: "04", title: "Automações", description: "Fluxos que eliminam trabalho manual e conectam suas ferramentas.", tag: "ops" },
-  { k: "05", title: "Aplicativos", description: "Apps rápidos e instaláveis (PWA/mobile) com experiência nativa.", tag: "mobile" },
-  { k: "06", title: "Dashboards", description: "Painéis em tempo real que transformam dados em decisão.", tag: "data" },
+  { k: "01", title: "Sites profissionais", description: "Landing pages e sites institucionais rápidos, responsivos e preparados para transformar visitas em contatos.", tag: "web" },
+  { k: "02", title: "Sistemas e aplicativos web", description: "Agendamentos, cadastros, dashboards e áreas administrativas criados para organizar sua operação.", tag: "full-stack" },
+  { k: "03", title: "Automação e atendimento com IA", description: "Atendimento 24h, qualificação de clientes e integrações que reduzem tarefas repetitivas.", tag: "IA" },
 ] as const;
 
 export const PROCESS_STEPS: readonly ProcessStep[] = [
