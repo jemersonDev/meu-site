@@ -27,9 +27,7 @@ export default function Projects() {
 
         <ul className="mt-14 grid list-none grid-cols-1 gap-5 p-0 md:grid-cols-2 lg:grid-cols-3">
           {PROJECTS.map((p) => (
-            <div key={p.id} data-anim className="contents">
-              <ProjectCard project={p} />
-            </div>
+            <ProjectCard key={p.id} project={p} />
           ))}
         </ul>
       </div>
