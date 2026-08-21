@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
 import "@/styles/globals.css";
 
-const SITE = "https://jemerson.dev";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://jemerson.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -14,12 +14,14 @@ export const metadata: Metadata = {
     template: "%s · Jemerson Lima",
   },
   description:
-    "Desenvolvedor full-stack e fundador. Sistemas web, inteligência artificial, automações, apps e dashboards que geram resultado.",
+    "Desenvolvedor Full Stack em Uberaba–MG. Criação de sites profissionais, sistemas web e automações com inteligência artificial para empresas.",
   keywords: [
     "desenvolvedor full-stack",
     "sistemas web",
     "inteligência artificial",
     "automações",
+    "criação de sites em Uberaba",
+    "desenvolvedor freelancer",
     "landing page",
     "Uberaba",
   ],
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Jemerson Lima",
     title: "Jemerson Lima — Sistemas web, IA e automações",
     description:
-      "Transformo ideias em software rápido, inteligente e que gera resultado.",
+      "Sites profissionais, sistemas web e automações com IA para empresas em Uberaba e todo o Brasil.",
   },
   twitter: {
     card: "summary_large_image",
