@@ -125,16 +125,16 @@ export default function HeroClient() {
 
         <h1 className="m-0 text-[clamp(34px,8vw,92px)] font-bold leading-[1.05] tracking-[-0.03em] sm:text-[clamp(40px,7.5vw,92px)] sm:leading-[0.98]">
           <span data-animate="line" className="block overflow-hidden">
-            Eu construo os
+            Sites e sistemas que
           </span>
           <span data-animate="line" className="block overflow-hidden">
             <span className="bg-gradient-to-r from-cyan to-violet bg-clip-text text-transparent">
-              sistemas
+              ajudam empresas
             </span>{" "}
-            que
+            a
           </span>
           <span data-animate="line" className="block overflow-hidden">
-            o seu negócio precisa.
+            vender e atender melhor.
           </span>
         </h1>
 
@@ -142,20 +142,20 @@ export default function HeroClient() {
           data-animate="sub"
           className="mt-6 max-w-[560px] text-[clamp(16px,2vw,20px)] leading-[1.55] text-slate"
         >
-          Desenvolvedor full-stack e fundador. Transformo ideias em software
-          rápido, inteligente e que gera resultado — de landing pages a
-          plataformas com IA.
+          Desenvolvo sites profissionais, sistemas web e automações com IA
+          para pequenos negócios e empresas. Atendimento em Uberaba e em todo
+          o Brasil.
         </p>
 
         <div className="mt-9 flex flex-wrap gap-3.5">
           <div data-animate="cta">
             <MagneticButton href="#contato" variant="primary">
-              Iniciar um projeto →
+              Solicitar orçamento →
             </MagneticButton>
           </div>
           <div data-animate="cta">
             <MagneticButton href="#projetos" variant="secondary">
-              Ver projetos
+              Ver projetos reais
             </MagneticButton>
           </div>
         </div>
@@ -163,9 +163,9 @@ export default function HeroClient() {
         {/* Trust stats — quick, credible signal for a hiring company */}
         <dl className="mt-14 flex flex-wrap gap-x-10 gap-y-4">
           {[
-            ["+30", "projetos entregues"],
-            ["24h", "tempo de resposta"],
-            ["100%", "PIX & LGPD ready"],
+            ["Uberaba", "atendimento local"],
+            ["Brasil", "projetos remotos"],
+            ["24h", "prazo de resposta"],
           ].map(([value, label]) => (
             <div key={label} data-animate="stat">
               <dt className="font-mono text-[22px] font-semibold text-foam">{value}</dt>

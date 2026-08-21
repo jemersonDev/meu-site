@@ -12,28 +12,39 @@ export interface Project {
 
 export const PROJECTS: readonly Project[] = [
   {
+    id: "marcus-tattoo",
+    title: "Marcus Tattoo",
+    description:
+      "Site interativo para estúdio de tatuagem, com portfólio, especialidades, processo, cuidados, localização, FAQ e contato direto para orçamento.",
+    tech: ["Next.js", "TypeScript", "Tailwind", "GSAP"],
+    demoUrl: "https://projeto-marcus-tato.vercel.app/",
+    status: "live",
+  },
+  {
     id: "jemtech-sports",
     title: "JemTech Sports",
     description:
-      "Sistema completo para organizar partidas de futebol — presença, times, estatísticas, ranking e assistente com IA.",
-    tech: ["React Native", "Supabase", "TypeScript", "OpenAI"],
+      "Aplicativo para organizar partidas de futebol, com presença, divisão de times, estatísticas, ranking e recursos de inteligência artificial.",
+    tech: ["React", "TanStack", "Supabase", "TypeScript"],
     status: "development",
   },
   {
-    id: "barbearia-almeida",
-    title: "Barbearia Almeida",
+    id: "devclub-landing",
+    title: "Desafio DevClub",
     description:
-      "PWA de gestão para barbearia: agendamento online, controle de clientes e financeiro para o dono e a equipe.",
-    tech: ["Next.js", "Supabase", "Tailwind", "PIX"],
+      "Landing page premium desenvolvida em um desafio Full Stack, com experiência responsiva, animações e otimizações de performance.",
+    tech: ["Next.js", "TypeScript", "GSAP", "Tailwind"],
+    githubUrl: "https://github.com/jemersonDev/devclub-landing",
+    demoUrl: "https://devclub-jemerson.netlify.app/",
     status: "live",
   },
   {
     id: "portfolio-v2",
-    title: "Portfólio v2",
+    title: "Portfólio Jemerson.dev",
     description:
-      "Este site — Next.js 15, GSAP e uma experiência de scroll cinematográfica construída do zero.",
+      "Portfólio profissional construído com renderização no servidor, SEO técnico, acessibilidade e animações progressivas.",
     tech: ["Next.js", "TypeScript", "GSAP", "Tailwind"],
-    githubUrl: "https://github.com/jemersonDev",
+    githubUrl: "https://github.com/jemersonDev/meu-site",
     status: "live",
   },
 ] as const;

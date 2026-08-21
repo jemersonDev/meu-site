@@ -1,7 +1,9 @@
 import Hero from "@/components/hero/Hero";
 import StackMarquee from "@/components/sections/StackMarquee";
+import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
+import Differentials from "@/components/sections/Differentials";
 import JemTechSports from "@/components/jemtech/JemTechSports";
 import Projects from "@/components/sections/Projects";
 import SocialLinks from "@/components/social/SocialLinks";
@@ -20,7 +22,9 @@ export default function Home() {
       <Hero />
       <StackMarquee />
       <RevealGroup>
+        <About />
         <Services />
+        <Differentials />
         <Process />
       </RevealGroup>
       <RevealGroup>

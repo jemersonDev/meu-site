@@ -1,4 +1,13 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site-url";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: "https://jemerson.dev", lastModified: new Date(), changeFrequency: "monthly", priority: 1 }];
+  return [
+    {
+      url: SITE_URL,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+  ];
 }

@@ -3,23 +3,24 @@ import { spaceGrotesk, jetbrainsMono } from "@/lib/fonts";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
+import { SITE_URL } from "@/lib/site-url";
 import "@/styles/globals.css";
 
-const SITE = "https://jemerson.dev";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Jemerson Lima — Sistemas web, IA e automações",
     template: "%s · Jemerson Lima",
   },
   description:
-    "Desenvolvedor full-stack e fundador. Sistemas web, inteligência artificial, automações, apps e dashboards que geram resultado.",
+    "Desenvolvedor Full Stack em Uberaba–MG. Criação de sites profissionais, sistemas web e automações com inteligência artificial para empresas.",
   keywords: [
     "desenvolvedor full-stack",
     "sistemas web",
     "inteligência artificial",
     "automações",
+    "criação de sites em Uberaba",
+    "desenvolvedor freelancer",
     "landing page",
     "Uberaba",
   ],
@@ -29,11 +30,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: SITE,
+    url: SITE_URL,
     siteName: "Jemerson Lima",
     title: "Jemerson Lima — Sistemas web, IA e automações",
     description:
-      "Transformo ideias em software rápido, inteligente e que gera resultado.",
+      "Sites profissionais, sistemas web e automações com IA para empresas em Uberaba e todo o Brasil.",
   },
   twitter: {
     card: "summary_large_image",
@@ -51,10 +52,13 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": ["Person", "ProfessionalService"],
   name: "Jemerson Lima",
-  jobTitle: "Desenvolvedor Full-Stack",
-  url: SITE,
+  jobTitle: "Desenvolvedor Full Stack",
+  description: "Criação de sites profissionais, sistemas web e automações com IA para empresas.",
+  areaServed: ["Uberaba", "Minas Gerais", "Brasil"],
+  knowsAbout: ["Next.js", "React", "TypeScript", "Sistemas web", "Automação", "Inteligência artificial"],
+  url: SITE_URL,
   address: { "@type": "PostalAddress", addressLocality: "Uberaba", addressRegion: "MG", addressCountry: "BR" },
   sameAs: [
     "https://github.com/jemersonDev",
