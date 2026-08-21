@@ -23,11 +23,11 @@ export default function Services() {
           data-anim
           className="max-w-[720px] text-[clamp(30px,4.5vw,54px)] font-bold leading-[1.05] tracking-[-0.02em]"
         >
-          Uma equipe de engenharia inteira em uma pessoa.
+          Soluções digitais completas para o seu negócio.
         </h2>
         <p data-anim className="mt-3.5 max-w-[520px] text-[17px] text-slate">
-          Do primeiro rabisco ao deploy. Cada serviço pensado para tirar peso das
-          suas costas e colocar resultado na mesa.
+          Do planejamento à publicação, cada solução é construída para resolver um
+          problema real, economizar tempo e apoiar o crescimento da empresa.
         </p>
 
         <ul className="mt-14 grid list-none grid-cols-1 gap-[18px] p-0 sm:grid-cols-2 lg:grid-cols-3">
